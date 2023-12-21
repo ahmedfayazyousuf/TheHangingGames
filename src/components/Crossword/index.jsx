@@ -182,10 +182,10 @@ const opportunityConditions = [
 
     if (isThehanginghouse) {
       console.log('isThehanginghouse');
-      document.getElementById('thahanginghouseText').style.color = '#00f526';
+      document.getElementById('thehanginghouseText').style.color = '#00f526';
     } else {
       console.log('No, some conditions are not met for isThehanginghouse.');
-      document.getElementById('thahanginghouseText').style.color = 'red';
+      document.getElementById('thehanginghouseText').style.color = 'red';
     }
 
     if (isOpportunity) {
@@ -360,7 +360,7 @@ const opportunityConditions = [
 
         <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
           <p id='growthText'>4. GROWTH</p>
-          <p id='thahanginghouseText'>5. THEHANGINGHOUSE</p>
+          <p id='thehanginghouseText'>5. THEHANGINGHOUSE</p>
           <p id='opportunityText'>6. OPPORTUNITY</p>
         </div>  
 
