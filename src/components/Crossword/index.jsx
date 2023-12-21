@@ -177,6 +177,7 @@ const opportunityConditions = [
       document.getElementById('growthText').style.color = '#00f526';
     } else {
       console.log('No, some conditions are not met for isGrowth.');
+      document.getElementById('growthText').style.color = 'red';
     }
 
     if (isThehanginghouse) {
