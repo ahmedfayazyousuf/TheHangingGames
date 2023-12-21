@@ -360,7 +360,7 @@ const opportunityConditions = [
 
         <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
           <p id='growthText'>4. GROWTH</p>
-          <p id='thehanginghouseText'>5. THEHANGINGHOUSE</p>
+          <p id='thahanginghouseText'>5. THEHANGINGHOUSE</p>
           <p id='opportunityText'>6. OPPORTUNITY</p>
         </div>  
 
