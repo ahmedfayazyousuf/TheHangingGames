@@ -6,9 +6,9 @@ import Logo from '../1_Assets/Logo2.png'
 const Home = () => {
 
   return (
-    <div style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column', height: '100vh'}}>
+    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100vh'}}>
 
-        <img style={{width: '100px', marginTop:'40px'}} alt='thhlogo' src={Logo}/>
+        <img style={{width: '100px', marginTop:'-150px'}} alt='thhlogo' src={Logo}/>
 
         <h1 style={{width: '100%', textAlign:'center'}}>THE HANGING GAMES</h1>  
 
