@@ -15,7 +15,7 @@ body{
   grid-template-columns: repeat(8, 12.5vw); /* Each column is 80px wide */
   grid-template-rows: repeat(8, 12.5vw); /* Each row is 80px tall */
   width: 100vw; /* Total width is 8 * 80px */
-  height: 100vw; /* Total height is 8 * 80px */
+  height: 100vw; /* Total height is 8 * 80px */ 
 }
 
 .tile {
@@ -113,7 +113,7 @@ input {
   height: 4.5454545454vw;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   margin: -1px;
   box-sizing: border-box;
   outline: none;

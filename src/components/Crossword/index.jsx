@@ -7,7 +7,7 @@ const Crossword = () => {
     { row: 1, col: 2, letter: 'U' },
     { row: 1, col: 3, letter: 'C' },
     { row: 1, col: 4, letter: 'C' },
-    { row: 1, col: 5, letter: 'E' },
+    { row: 1, col: 5, letter: 'E' }, 
     { row: 1, col: 6, letter: 'S' },
     { row: 1, col: 7, letter: 'S' },
   ];
@@ -37,7 +37,7 @@ const collaborationConditions = [
       if (word.input) {
         return { backgroundColor: 'white', color: 'black' };
       } else {
-        return { backgroundColor: 'rgb(99,99,99)', color: 'white' };
+        return { backgroundColor: 'black', color: 'white', border: '0.1px solid white' };
       }
     }
     const defaultLetter = defaultLetters[`${row}-${col}`];
@@ -227,6 +227,26 @@ const collaborationConditions = [
       <div className="crossword">{renderGrid()}</div>
       
       <button style={{height: '50px', width: '120px', fontSize: '16px', background: 'black', color: '#00f526', border: '1px solid #00f526', marginTop: '30px'}} onClick={handleSubmit}>SUBMIT</button>
+
+
+
+
+      <div style={{width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+
+        <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
+          <p>1. SUCCESS</p>
+          <p>2. COLLABORATION</p>
+          <p>3. BREAKTHROUGHS</p>
+        </div>
+
+        <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
+          <p>4. GROWTH</p>
+          <p>5. THEHANGINGHOUSE</p>
+          <p>6. OPPORTUNITY</p>
+        </div>  
+
+        
+      </div>
 
     </div>
   );
