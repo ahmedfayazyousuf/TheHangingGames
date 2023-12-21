@@ -7,7 +7,7 @@ const Crossword = () => {
     { row: 1, col: 2, letter: 'U' },
     { row: 1, col: 3, letter: 'C' },
     { row: 1, col: 4, letter: 'C' },
-    { row: 1, col: 5, letter: 'E' }, 
+    { row: 1, col: 5, letter: 'E' },
     { row: 1, col: 6, letter: 'S' },
     { row: 1, col: 7, letter: 'S' },
   ];
@@ -30,6 +30,69 @@ const collaborationConditions = [
   ];
 
 
+const breakthroughsConditions = [
+    { row: 5, col: 0, letter: 'B' },
+    { row: 5, col: 1, letter: 'R' },
+    { row: 5, col: 2, letter: 'E' },
+    { row: 5, col: 3, letter: 'A' },
+    { row: 5, col: 4, letter: 'K' },
+    { row: 5, col: 5, letter: 'T' },
+    { row: 5, col: 6, letter: 'H' },
+    { row: 5, col: 7, letter: 'R' },
+    { row: 5, col: 8, letter: 'O' },
+    { row: 5, col: 9, letter: 'U' },
+    { row: 5, col: 10, letter: 'G' },
+    { row: 5, col: 11, letter: 'H' },
+    { row: 5, col: 12, letter: 'S' },
+  ];
+
+
+
+const growthConditions = [
+    { row: 7, col: 1, letter: 'G' },
+    { row: 7, col: 2, letter: 'R' },
+    { row: 7, col: 3, letter: 'O' },
+    { row: 7, col: 4, letter: 'W' },
+    { row: 7, col: 5, letter: 'T' },
+    { row: 7, col: 6, letter: 'H' },
+  ];
+
+const thehanginghouseConditions = [
+    { row: 10, col: 3, letter: 'T' },
+    { row: 10, col: 4, letter: 'H' },
+    { row: 10, col: 5, letter: 'E' },
+    { row: 10, col: 6, letter: 'H' },
+    { row: 10, col: 7, letter: 'A' },
+    { row: 10, col: 8, letter: 'N' },
+    { row: 10, col: 9, letter: 'G' },
+    { row: 10, col: 10, letter: 'I' },
+    { row: 10, col: 11, letter: 'N' },
+    { row: 10, col: 12, letter: 'G' },
+    { row: 10, col: 13, letter: 'H' },
+    { row: 10, col: 14, letter: 'O' },
+    { row: 10, col: 15, letter: 'U' },
+    { row: 10, col: 16, letter: 'S' },
+    { row: 10, col: 17, letter: 'E' },
+  ];
+
+
+const opportunityConditions = [
+    { row: 4, col: 15, letter: 'O' },
+    { row: 5, col: 15, letter: 'P' },
+    { row: 6, col: 15, letter: 'P' },
+    { row: 7, col: 15, letter: 'O' },
+    { row: 8, col: 15, letter: 'R' },
+    { row: 9, col: 15, letter: 'T' },
+    { row: 10, col: 15, letter: 'U' },
+    { row: 11, col: 15, letter: 'N' },
+    { row: 12, col: 15, letter: 'I' },
+    { row: 13, col: 15, letter: 'T' },
+    { row: 14, col: 15, letter: 'Y' },
+  ];
+
+  
+
+
 
   const getCellStyle = (row, col) => {
     const word = findWord(row, col);
@@ -37,7 +100,7 @@ const collaborationConditions = [
       if (word.input) {
         return { backgroundColor: 'white', color: 'black' };
       } else {
-        return { backgroundColor: 'black', color: 'white', border: '0.1px solid white' };
+        return { backgroundColor: 'black', color: 'white', border: '0.1px solid white'};
       }
     }
     const defaultLetter = defaultLetters[`${row}-${col}`];
@@ -65,18 +128,73 @@ const collaborationConditions = [
       return grid[row][col] === letter;
     });
 
-    if (isCollaboration) {
-      console.log('COLLABORATION');
-    } else {
-      console.log('No, some conditions are not met for COLLABORATION.');
-    }
+    const isBreakthroughs = breakthroughsConditions.every((condition) => {
+      const { row, col, letter } = condition;
+      return grid[row][col] === letter;
+    });
 
+    const isGrowth = growthConditions.every((condition) => {
+      const { row, col, letter } = condition;
+      return grid[row][col] === letter;
+    });
+
+    const isThehanginghouse = thehanginghouseConditions.every((condition) => {
+      const { row, col, letter } = condition;
+      return grid[row][col] === letter;
+    });
+
+    const isOpportunity = opportunityConditions.every((condition) => {
+      const { row, col, letter } = condition;
+      return grid[row][col] === letter;
+    });
+
+    if (isCollaboration) {
+      console.log('isCollaboration');
+      document.getElementById('collaborationText').style.color = '#00f526';
+    } else {
+      console.log('No, some conditions are not met for isCollaboration.');
+      document.getElementById('collaborationText').style.color = 'red';
+    }
 
     if (isSuccess) {
-      console.log('SUCCESS');
+      console.log('isSuccess');
+      document.getElementById('successText').style.color = '#00f526';
     } else {
-      console.log('No, some conditions are not met for SUCCESS.');
+      console.log('No, some conditions are not met for isSuccess.');
+      document.getElementById('successText').style.color = 'red';
     }
+
+    if (isBreakthroughs) {
+      console.log('isBreakthroughs');
+      document.getElementById('breakthroughsText').style.color = '#00f526';
+    } else {
+      console.log('No, some conditions are not met for isBreakthroughs.');
+      document.getElementById('breakthroughsText').style.color = 'red';
+    }
+
+    if (isGrowth) {
+      console.log('isGrowth');
+      document.getElementById('growthText').style.color = '#00f526';
+    } else {
+      console.log('No, some conditions are not met for isGrowth.');
+    }
+
+    if (isThehanginghouse) {
+      console.log('isThehanginghouse');
+      document.getElementById('thahanginghouseText').style.color = '#00f526';
+    } else {
+      console.log('No, some conditions are not met for isThehanginghouse.');
+      document.getElementById('thahanginghouseText').style.color = 'red';
+    }
+
+    if (isOpportunity) {
+      console.log('isOpportunity');
+      document.getElementById('opportunityText').style.color = '#00f526';
+    } else {
+      console.log('No, some conditions are not met for isOpportunity.');
+      document.getElementById('opportunityText').style.color = 'red';
+    }
+
   };
 
   const defaultLetters = {
@@ -234,15 +352,15 @@ const collaborationConditions = [
       <div style={{width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
 
         <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
-          <p>1. SUCCESS</p>
-          <p>2. COLLABORATION</p>
-          <p>3. BREAKTHROUGHS</p>
+          <p id='successText'>1. SUCCESS</p>
+          <p id='collaborationText'>2. COLLABORATION</p>
+          <p id='breakthroughsText'>3. BREAKTHROUGHS</p>
         </div>
 
         <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
-          <p>4. GROWTH</p>
-          <p>5. THEHANGINGHOUSE</p>
-          <p>6. OPPORTUNITY</p>
+          <p id='growthText'>4. GROWTH</p>
+          <p id='thehanginghouseText'>5. THEHANGINGHOUSE</p>
+          <p id='opportunityText'>6. OPPORTUNITY</p>
         </div>  
 
         
