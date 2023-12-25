@@ -1,7 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../1_Assets/Grid.css';
 
 const Crossword = () => {
+
+  useEffect(() => {
+    const container = document.getElementsByClassName("container")[0];
+
+    if (container) {
+      container.onkeyup = function (e) {
+        var target = e.srcElement;
+        var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+        var myLength = target.value.length;
+        if (myLength >= maxLength) {
+          var next = target;
+          while (next = next.nextElementSibling) {
+            if (next == null)
+              break;
+            if (next.tagName.toLowerCase() == "input") {
+              next.focus();
+              break;
+            }
+          }
+        }
+      };
+    }
+  }, []);
+
+
   const successConditions = [
     { row: 1, col: 1, letter: 'S' },
     { row: 1, col: 2, letter: 'U' },
@@ -114,8 +139,6 @@ const opportunityConditions = [
       defaultLetter,
     };
   };
-  
-  
 
   const handleSubmit = () => {
     const isSuccess = successConditions.every((condition) => {
@@ -210,7 +233,7 @@ const opportunityConditions = [
     '12-7': 'A',
     '12-8': 'G',
     '0-18': 'B',
-    '1-18': 'O',
+    '1-18': 'O', 
     '2-18': 'T',
     '3-18': 'T',
     '4-18': 'L',
@@ -340,7 +363,7 @@ const opportunityConditions = [
   };
 
   return( 
-    <div style={{display: 'flex', height: '100vh', width: '100vw', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column'}}>
+    <div className='container' style={{display: 'flex', height: '100vh', width: '100vw', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column'}}>
       <h1 style={{width: '100%', textAlign:'center'}}>THE HANGING HOUSE</h1>
 
       <div className="crossword">{renderGrid()}</div>
