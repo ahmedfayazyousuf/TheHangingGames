@@ -56,9 +56,7 @@ const WhackAMoleGame = () => {
       <div className='mainwhack2'>
         <h1 className='h1whack'>Whack-a-mole! </h1>
         <h1 className="score" >Score: {score} </h1>
-        <div className="controls">
-          <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab'}}>Start!</button>
-        </div>
+        
         <div className="game">
           {Array.from({ length: 6 }, (_, index) => (
             <div key={index} className={`hole hole${index + 1}`}>
@@ -66,6 +64,11 @@ const WhackAMoleGame = () => {
             </div>
           ))}
         </div>
+
+        <div className="controls">
+          <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', marginTop:'70px'}}>Start!</button>
+        </div>
+
       </div>
     </div>
   );
