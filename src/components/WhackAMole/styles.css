@@ -4,21 +4,21 @@
   box-sizing: inherit;
 }
 
-html {
+.mainwhack1 {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  background: black;
 }
 
-body {
+.mainwhack2 {
   padding: 0;
   margin: 0;
   font-family: "Amatic SC", cursive;
 }
 
-h1 {
+.h1whack {
   text-align: center;
-  font-size: 10rem;
+  font-size: 4vw;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -29,10 +29,12 @@ h1 {
 }
 
 .score {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0 3rem;
-  line-height: 1;
-  border-radius: 1rem;
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* padding: 0 3rem; */
+    /* line-height: 1; */
+    border-radius: 1rem;
+    font-size: 2vw;
 }
 
 .game {
