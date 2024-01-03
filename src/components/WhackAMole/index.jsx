@@ -53,7 +53,7 @@ const WhackAMoleGame = () => {
 
   return (
     <div>
-      <h1>Whack-a-mole! <span className="score">{score}</span></h1>
+      <h1 className='h1whack'>Whack-a-mole! <span className="score">{score}</span></h1>
       <div className="controls">
         <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab'}}>Start!</button>
       </div>
