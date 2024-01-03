@@ -13,19 +13,19 @@ const Home = () => {
         <h1 style={{width: '100%', textAlign:'center'}}>THE HANGING GAMES</h1>  
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
-            <Link to="/Crossword" className='start-btn' style={{textDecoration: 'none'}}>
+            <Link to="/Crossword" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
             CROSSWORD
             </Link>
-            <Link to="/WordSearch" className='start-btn' style={{textDecoration: 'none'}}>
+            <Link to="/WordSearch" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
             WORDSEARCH
             </Link>
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
-            <Link to="/whackamole" className='start-btn' style={{textDecoration: 'none'}}>
+            <Link to="/whackamole" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
             WHACK-A-MOLE
             </Link>
-            <Link to="/brickbreaker" className='start-btn' style={{textDecoration: 'none'}}>
+            <Link to="/brickbreaker" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
             BRICK-BREAKER
             </Link>
         </div>
