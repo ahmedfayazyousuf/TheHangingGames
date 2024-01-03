@@ -21,6 +21,15 @@ const Home = () => {
             </Link>
         </div>
 
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+            <Link to="/whackamole" className='start-btn' style={{textDecoration: 'none'}}>
+            WHACK-A-MOLE
+            </Link>
+            <Link to="/brickbreaker" className='start-btn' style={{textDecoration: 'none'}}>
+            BRICK-BREAKER
+            </Link>
+        </div>
+
     </div>
   );
 };
