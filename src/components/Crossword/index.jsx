@@ -13,9 +13,11 @@ const Crossword = () => {
         var myLength = target.value.length;
         if (myLength >= maxLength) {
           var next = target;
+          // eslint-disable-next-line
           while (next = next.nextElementSibling) {
             if (next == null)
               break;
+              // eslint-disable-next-line
             if (next.tagName.toLowerCase() == "input") {
               next.focus();
               break;
