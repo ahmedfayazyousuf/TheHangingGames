@@ -5,6 +5,7 @@ import Crossword from './components/Crossword';
 import Wordsearch from './components/Wordsearch'; 
 import WhackAMole from './components/WhackAMole'; 
 import Hangman from './components/Hangman'; 
+import MemoryGame from './components/MemoryGame'; 
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/Crossword" element={<Crossword />} />
           <Route exact path="/WhackAMole" element={<WhackAMole />} />
           <Route exact path="/Hangman" element={<Hangman />} />
+          <Route exact path="/MemoryGame" element={<MemoryGame />} />
         </Routes>
       </Router>
     </>
