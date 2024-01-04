@@ -9,7 +9,7 @@ import { getElementError } from '@testing-library/react';
 
 const TriviaQuiz = () => {
 
-    const location = useLocation()
+    // const location = useLocation()
     const history = useNavigate()
 
     var question = {
