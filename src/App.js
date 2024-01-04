@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/TicTacToe" element={<TicTacToe />} />
           <Route exact path="/TriviaQuiz" element={<TriviaQuiz />} />
           
-          <Route exact path="/TriviaQuizScore" element={<TriviaQuizScore />} />
+          <Route exact path="/score" element={<TriviaQuizScore />} />
         </Routes>
       </Router>
     </>

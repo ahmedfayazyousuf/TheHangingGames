@@ -6,10 +6,12 @@ import { useState } from "react"
 import { useLocation, useNavigate } from 'react-router-dom';
 // import firebase from '../../firebase';
 import { getElementError } from '@testing-library/react';
+import './trivia.css'
 
 const TriviaQuiz = () => {
 
-
+    const location = useLocation()
+    const history = useNavigate()
 
     var question = {
         1:{
@@ -123,6 +125,7 @@ const TriviaQuiz = () => {
 
                 
             onTimesUp();
+            history('/score',{state:{score:score}})
             }
         }, 1000);
         }
@@ -170,8 +173,8 @@ const TriviaQuiz = () => {
             if(count == -1){
                 
                 clearInterval(timer);
-                const time = document.getElementById('base-timer__label').innerHTML
-                console.log(time,'rime')
+                // const time = document.getElementById('base-timer__label').innerHTML
+                // console.log(time,'rime')
 
                 // const Users = firebase.firestore().collection("Users");
 
@@ -181,6 +184,7 @@ const TriviaQuiz = () => {
                 //     TimeTaken:time
                 // })
 
+                history('/score',{state:{score:score}})
             } 
         }, 1000);
 
@@ -313,6 +317,7 @@ const TriviaQuiz = () => {
                 //     TimeTaken:time
                 // })
 
+                history('/score',{state:{score:score+1,time:time}})
 
 
             }else{
@@ -328,6 +333,7 @@ const TriviaQuiz = () => {
                 // })
     
             console.log('score=',score)
+            history('/score',{state:{score:score,time:time}})
 
             }
 

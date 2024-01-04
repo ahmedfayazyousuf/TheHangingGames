@@ -26,6 +26,8 @@
   border: 1px solid #ddd; /* Add a border for better visibility */
 }
 
+
+
 .tile.selected {
   background-color: #7fd3f7;
 }
