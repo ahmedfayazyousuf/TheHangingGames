@@ -14,19 +14,28 @@ const Home = () => {
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
             <Link to="/Crossword" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
-            CROSSWORD
+              CROSSWORD
             </Link>
             <Link to="/WordSearch" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
-            WORDSEARCH
+              WORDSEARCH
             </Link>
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
             <Link to="/whackamole" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
-            WHACK-A-MOLE
+              WHACK-A-MOLE
             </Link>
-            <Link to="/brickbreaker" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
-            BRICK-BREAKER
+            <Link to="/hangman" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              HANGMAN
+            </Link>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+            <Link to="/memorygame" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              MEMORY GAME
+            </Link>
+            <Link to="/hangman" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              NEW GAME
             </Link>
         </div>
 
