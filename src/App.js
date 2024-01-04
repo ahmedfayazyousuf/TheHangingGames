@@ -8,7 +8,9 @@ import Wordsearch from './components/Wordsearch';
 import WhackAMole from './components/WhackAMole'; 
 import Hangman from './components/Hangman'; 
 import MemoryGame from './components/MemoryGame'; 
-import TicTacToe from './components/TicTacToe';
+import TicTacToe from './components/TicTacToe'; 
+import TriviaQuiz from './components/TriviaQuiz/index.js';
+import TriviaQuizScore from './components/TriviaQuiz/score.js';
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
           <Route exact path="/Hangman" element={<Hangman />} />
           <Route exact path="/MemoryGame" element={<MemoryGame />} />
           <Route exact path="/TicTacToe" element={<TicTacToe />} />
+          <Route exact path="/TriviaQuiz" element={<TriviaQuiz />} />
+          
+          <Route exact path="/TriviaQuizScore" element={<TriviaQuizScore />} />
         </Routes>
       </Router>
     </>

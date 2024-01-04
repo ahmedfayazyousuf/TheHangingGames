@@ -2,7 +2,6 @@ import React from 'react';
 import './styles.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 const TicTacToe = () => {
   const renderBlocks = () => {
     const blocks = [];
