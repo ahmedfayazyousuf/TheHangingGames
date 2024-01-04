@@ -13,14 +13,13 @@ import TicTacToe from '../1_Assets/Thumbnails/TicTacToe.png';
 const Home = () => {
 
   return (
-    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100vh'}}>
+    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '100%', width: '100vw'}}>
 
-        <img style={{width: '100px', marginTop:'-100px'}} alt='thhlogo' src={Logo}/>
+        <img style={{width: '100px', marginTop: '60px'}} alt='thhlogo' src={Logo}/>
 
         <h1 style={{width: '100%', textAlign:'center'}}>THE HANGING GAMES</h1>  
 
-
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row'}}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', flexWrap: 'wrap', minWidth: '80vw', maxWidth: '100vw', paddingBottom: '100px'}}>
           <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${Crossword})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/Crossword" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
               CROSSWORD
@@ -32,12 +31,8 @@ const Home = () => {
               WORDSEARCH
             </Link>
           </div>
-        </div>
 
 
-
-
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
           <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${Whackamole})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/whackamole" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
               WHACK-A-MOLE
@@ -49,9 +44,7 @@ const Home = () => {
               HANGMAN
             </Link>
           </div>
-        </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
           <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${MemoryGame})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/memorygame" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
               MEMORY GAME
@@ -61,6 +54,30 @@ const Home = () => {
           <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
               TIC TAC TOE
+            </Link>
+          </div>
+
+          <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              PUZZLE GAME
+            </Link>
+          </div>
+
+          <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              TRIVIA APP
+            </Link>
+          </div>
+
+          <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              SNAKE GAME
+            </Link>
+          </div>
+
+          <div style={{height: '100px', width: '160px', display: 'flex', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              PACMAN
             </Link>
           </div>
         </div>
