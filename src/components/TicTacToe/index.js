@@ -71,7 +71,7 @@ const TicTacToe = () => {
       <div className="end">
       {/* eslint-disable-next-line */}
         <h3></h3>
-        <a href="/">Restart</a>
+        <a href="/tictactoe">Restart</a>
       </div>
       {/* <h5>Note: use the Full Page view for the best experience.</h5> */}
     </div>

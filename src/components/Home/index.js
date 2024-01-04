@@ -34,8 +34,8 @@ const Home = () => {
             <Link to="/memorygame" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
               MEMORY GAME
             </Link>
-            <Link to="/hangman" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
-              NEW GAME
+            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none'}}>
+              TIC TAC TOE
             </Link>
         </div>
 
