@@ -6,10 +6,7 @@ const HangmanGame = () => {
   // eslint-disable-next-line
   const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
   // eslint-disable-next-line
-  const puzzleList = ["alphabet", "kitten", "blasphemy", "telephone", "sinkhole", "hammer", "technical", "banana", "elementary", "laptop",
-    "excellent", "famous", "cheese", "actress", "landlord", "interest", "lipstick", "cardboard", "hungry", "inventory",
-    "windblown", "attempt", "liquid", "tranquil", "effect", "digital", "strawberry", "clinic", "alchemy", "figure", "virtual",
-    "melee", "gravity", "sugar", "piglet", "orange", "traumatized", "magnificent", "fallout", "elevator"
+  const puzzleList = ["thehanginghouse", "orange", "apple"
     // eslint-disable-next-line
   ];
   // eslint-disable-next-line
