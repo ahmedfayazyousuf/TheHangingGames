@@ -10,7 +10,7 @@ import './trivia.css'
 
 const TriviaQuiz = () => {
 
-    const location = useLocation()
+    // const location = useLocation()
     const history = useNavigate()
 
     var question = {
