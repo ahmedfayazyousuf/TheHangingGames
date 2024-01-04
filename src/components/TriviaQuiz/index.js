@@ -9,8 +9,7 @@ import { getElementError } from '@testing-library/react';
 
 const TriviaQuiz = () => {
 
-    const location = useLocation()
-    const history = useNavigate()
+
 
     var question = {
         1:{
@@ -124,7 +123,6 @@ const TriviaQuiz = () => {
 
                 
             onTimesUp();
-            history('/score',{state:{score:score}})
             }
         }, 1000);
         }
@@ -183,7 +181,6 @@ const TriviaQuiz = () => {
                 //     TimeTaken:time
                 // })
 
-                history('/score',{state:{score:score}})
             } 
         }, 1000);
 
@@ -316,7 +313,6 @@ const TriviaQuiz = () => {
                 //     TimeTaken:time
                 // })
 
-                history('/score',{state:{score:score+1,time:time}})
 
 
             }else{
@@ -332,7 +328,6 @@ const TriviaQuiz = () => {
                 // })
     
             console.log('score=',score)
-            history('/score',{state:{score:score,time:time}})
 
             }
 
