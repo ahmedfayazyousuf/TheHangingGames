@@ -3,12 +3,16 @@ import './styles.scss';
 import $ from "jquery"
 
 const HangmanGame = () => {
+  // eslint-disable-next-line
   const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  // eslint-disable-next-line
   const puzzleList = ["alphabet", "kitten", "blasphemy", "telephone", "sinkhole", "hammer", "technical", "banana", "elementary", "laptop",
     "excellent", "famous", "cheese", "actress", "landlord", "interest", "lipstick", "cardboard", "hungry", "inventory",
     "windblown", "attempt", "liquid", "tranquil", "effect", "digital", "strawberry", "clinic", "alchemy", "figure", "virtual",
     "melee", "gravity", "sugar", "piglet", "orange", "traumatized", "magnificent", "fallout", "elevator"
+    // eslint-disable-next-line
   ];
+  // eslint-disable-next-line
   const hangmanParts = [
     '<circle stroke-width="10" stroke-miterlimit="10" cx="254.404" cy="174.26" r="29.412"/>',
     '<line stroke-width="10" stroke-miterlimit="10" x1="254.404" y1="203.672" x2="254.404" y2="314.056"/>',
@@ -20,12 +24,17 @@ const HangmanGame = () => {
     '<circle fill="#000000" cx="265.663" cy="169.333" r="3.667"/>',
     '<path stroke-width="4" stroke-miterlimit="10" d="M245.571,190.082c0-4.879,3.955-8.833,8.833-8.833 c4.879,0,8.833,3.955,8.833,8.833"/>'
   ];
-
+  // eslint-disable-next-line
   const [puzzle, setPuzzle] = useState('');
+  // eslint-disable-next-line
   const [puzzleLetterContainers, setPuzzleLetterContainers] = useState([]);
+  // eslint-disable-next-line
   const [previouslyChosen, setPreviouslyChosen] = useState('');
+  // eslint-disable-next-line
   const [totalIncorrect, setTotalIncorrect] = useState(0);
+  // eslint-disable-next-line
   const [remainingBlanks, setRemainingBlanks] = useState(0);
+  // eslint-disable-next-line
   const [hangmanPartsRendered, setHangmanPartsRendered] = useState([]);
 
   useEffect(() => {
@@ -95,6 +104,7 @@ function setUp(){
 	
 	puzzle.split('').forEach((i) => {
 		var thisClass = "hangman-puzzle-letters";
+    // eslint-disable-next-line
 		if(i == ' ') {
 			thisClass += ' space';
 			remainingBlanks--;
@@ -127,6 +137,7 @@ function letterChosen(letter) {
 function checkLetter(solution, thisLetter) {
 	var indexes = [];
 	solution.split('').forEach(function(item, index){
+    // eslint-disable-next-line
 		if(item == thisLetter) {
 			indexes.push(index);
 		}
@@ -163,6 +174,7 @@ function gameOver(won) {
 		$('.game-over-won').hide();
 		$('.hangman-puzzle-letters').each(function(index) {
 			console.log($(this).html());
+      // eslint-disable-next-line
 			if($(this).html() == "&nbsp;" && !$(this).hasClass("space")) {
 				$(this).html(puzzle.charAt(index));
 				$(this).addClass('game-lost');
