@@ -8,7 +8,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   * {
-    ${tw`text-purple-300 m-0 p-0 [box-sizing:border-box] [border:0_solid] font-sans`};
+    ${tw`text-blue-300 m-0 p-0 [box-sizing:border-box] [border:0_solid]`};
   }
 `;
 export const Layout = tw.div`w-screen h-screen flex justify-center items-center`;
@@ -21,7 +21,7 @@ export const Title = tw.div`text-gray-200 [font-size:2rem] font-bold mb-7`
 export const Footer = styled.div(({ smaller }) => [tw`text-gray-400 [font-size:.9rem] font-light mb-2`, smaller && tw`[font-size:.8rem]`]);
 export const Link = tw.a`[text-decoration:none]`;
 export const SpanBold = tw.span`font-bold`
-export const Container = tw.div`relative flex flex-col items-center rounded-lg [box-shadow:0 10px 10px rgba(0,0,0,.2)] mb-5`;
+export const Container = tw.div`relative flex flex-col items-center [border-width:5px] [border:1px solid #00f526] [box-shadow:0 10px 10px rgba(0,0,0,.2)] mb-5`;
 export const TopBarContainer = tw.div`absolute flex flex-col items-center w-full`;
 export const StatusContainer = tw.div`w-full flex px-5 py-4 justify-between items-center mb-5`;
 export const Canvas = tw.canvas`block`;
