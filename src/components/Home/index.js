@@ -14,8 +14,9 @@ import MemoryGame from '../1_Assets/Thumbnails/MemoryGame.jpg';
 import TicTacToe from '../1_Assets/Thumbnails/TicTacToe.png';
 import Puzzle from '../1_Assets/Thumbnails/Puzzle.jpg';
 import Trivia from '../1_Assets/Thumbnails/Trivia.png';
-import Snake from '../1_Assets/Thumbnails/Snake.jpg';
+// import Snake from '../1_Assets/Thumbnails/Snake.jpg';
 import Flappy from '../1_Assets/Thumbnails/Flappy.jpg';
+import FightingGame from '../1_Assets/Thumbnails/FightingGame.jpg';
 
 const Home = () => { 
 
@@ -109,7 +110,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Snake})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+          {/* <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Snake})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/tictactoe" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               SNAKE GAME
             </Link>
@@ -117,11 +118,21 @@ const Home = () => {
               <img style={{width: '16px', marginRight: '2px', position: 'sticky'}} alt='someicon' src={MobileIcon}/>
               <img style={{width: '18px', position: 'sticky'}} alt='someicon' src={DesktopIcon}/>
             </div>
-          </div>
+          </div> */}
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Flappy})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
             <Link to="/flappy" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               FLAPPY BIRD
+            </Link>
+            <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
+              <img style={{width: '16px', marginRight: '2px', position: 'sticky'}} alt='someicon' src={MobileIcon}/>
+              <img style={{width: '18px', position: 'sticky'}} alt='someicon' src={DesktopIcon}/>
+            </div>
+          </div>
+
+          <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${FightingGame})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
+            <Link to="/fightinggame" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+              FIGHTING GAME
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
               <img style={{width: '16px', marginRight: '2px', position: 'sticky'}} alt='someicon' src={MobileIcon}/>

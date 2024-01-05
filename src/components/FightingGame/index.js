@@ -1,18 +1,20 @@
 import { useGame } from './hooks/useGame';
 import {
+  // eslint-disable-next-line
   Link,
   Timer,
   Parag,
   Canvas,
   Result,
   Layout,
+  // eslint-disable-next-line
   Footer,
   Counter,
   SpanBold,
   Container,
   MiddleSide,
   GlobalStyles,
-  LeftSide,
+  LeftSide, 
   RightSide,
   PlayerOneBar,
   PlayerTwoBar,
@@ -70,8 +72,8 @@ function App() {
           {renderStartOverlay()}
           <Canvas ref={canvasRef} />
         </Container>
-        <Footer>Recreated by <Link href="https://github.com/tyogautomo" target="_blank"><SpanBold>Yoga Utomo</SpanBold></Link></Footer>
-        <Footer smaller>Assets by <SpanBold>brullov</SpanBold> and <SpanBold>luizmelo</SpanBold>, a tutorial by <SpanBold>Chris Course</SpanBold></Footer>
+        {/* <Footer>Recreated by <Link href="https://github.com/tyogautomo" target="_blank"><SpanBold>Yoga Utomo</SpanBold></Link></Footer> */}
+        {/* <Footer smaller>Assets by <SpanBold>brullov</SpanBold> and <SpanBold>luizmelo</SpanBold>, a tutorial by <SpanBold>Chris Course</SpanBold></Footer> */}
       </MiddleSide>
       <RightSide />
     </Layout>
