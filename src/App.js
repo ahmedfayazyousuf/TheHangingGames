@@ -11,7 +11,7 @@ import MemoryGame from './components/MemoryGame';
 import TicTacToe from './components/TicTacToe'; 
 import TriviaQuiz from './components/TriviaQuiz/index.js';
 import TriviaQuizScore from './components/TriviaQuiz/score.js';
-import FlappyBird from './components/FlappyBird/index.js';
+import FightingGame from './components/FightingGame';
 
 function App() {
   return (
@@ -26,10 +26,9 @@ function App() {
           <Route exact path="/MemoryGame" element={<MemoryGame />} />
           <Route exact path="/TicTacToe" element={<TicTacToe />} />
           <Route exact path="/TriviaQuiz" element={<TriviaQuiz />} />
+          <Route exact path="/TriviaQuizScore" element={<TriviaQuizScore />} />
           
-          <Route exact path="/score" element={<TriviaQuizScore />} />
-          <Route exact path="/Flappy" element={<FlappyBird />} />
-
+          <Route exact path="/FightingGame" element={<FightingGame />} />
         </Routes>
       </Router>
     </>
