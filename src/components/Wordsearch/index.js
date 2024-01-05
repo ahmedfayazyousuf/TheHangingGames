@@ -96,7 +96,7 @@ const Home = () => {
     }
   };
 
-  return (
+  return ( 
     <div className="App">
       <h1 style={{width: '100%', textAlign:'center'}}>THE HANGING HOUSE</h1>
       <div className="grid">
@@ -124,8 +124,8 @@ const Home = () => {
 
       <h3 style={{width: '100%', textAlign:'center', marginTop: '80px', marginBottom: '5px'}}>Words to Search:</h3>
 
-      <div style={{background: 'black', display: 'flex', color: 'white', flexDirection: 'row', width: '100%', justifyContent: 'center', alignItems: 'center'}}>    
-        <p style={{color: '#00f526'}}>HELLO</p>
+      <div style={{display: 'flex', color: 'white', flexDirection: 'row', width: '100%', justifyContent: 'center', alignItems: 'center'}}>    
+        <p style={{color: 'white'}}>HELLO</p>
       </div>
 
 
