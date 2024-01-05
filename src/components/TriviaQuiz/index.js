@@ -3,10 +3,8 @@ import logo2 from '../1_Assets/Logo.png';
 import frame from '../1_Assets/LockupFrame.png'
 import React, { useEffect } from "react";
 import { useState } from "react"
-import { useLocation, useNavigate } from 'react-router-dom';
-// import firebase from '../../firebase';
-import { getElementError } from '@testing-library/react';
-import './trivia.css'
+import { useNavigate } from 'react-router-dom';
+import './trivia.css';
 
 const TriviaQuiz = () => {
 
@@ -91,6 +89,7 @@ const TriviaQuiz = () => {
         let timePassed = 0;
         let timeLeft = TIME_LIMIT;
         let timerInterval = null;
+        // eslint-disable-next-line
         let remainingPathColor = COLOR_CODES.info.color;
 
     useEffect(()=>{
@@ -102,8 +101,11 @@ const TriviaQuiz = () => {
         }
 
         function startTimer() {
+            // eslint-disable-next-line
         timerInterval = setInterval(() => {
+            // eslint-disable-next-line
             timePassed = timePassed += 1;
+            // eslint-disable-next-line
             timeLeft = TIME_LIMIT - timePassed;
             document.getElementById("base-timer-label").innerHTML =  
             timeLeft
@@ -170,6 +172,7 @@ const TriviaQuiz = () => {
 
         var count = 60, timer = setInterval(function() {
             $("#base-timer__label").html(count--);
+            // eslint-disable-next-line
             if(count == -1){
                 
                 clearInterval(timer);
@@ -223,7 +226,7 @@ const TriviaQuiz = () => {
 
         setQnos(temp)
     },[])
-
+    // eslint-disable-next-line
     function formatTime(time) {
         const minutes = Math.floor(time / 60);
         let seconds = time % 60;
@@ -413,6 +416,7 @@ return(
             <path
                 id="base-timer-path-remaining"
                 stroke-dasharray="283"
+                // eslint-disable-next-line
                 className="base-timer__path-remaining green ${remainingPathColor}"
                 d="
                 M 50, 50
