@@ -23,6 +23,7 @@ export default function FlappyBird(){
             flight, 
             flyHeight, 
             currentScore, 
+            // eslint-disable-next-line
             pipe;
         
         // pipe settings
@@ -55,6 +56,7 @@ export default function FlappyBird(){
           
           // pipe display
           if (gamePlaying){
+            // eslint-disable-next-line
             pipes.map(pipe => {
               // pipe moving
               pipe[0] -= speed;
