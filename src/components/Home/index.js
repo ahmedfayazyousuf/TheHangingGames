@@ -29,7 +29,7 @@ const Home = () => {
         <div className='HomeMainDiv'>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Crossword})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/Crossword" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/Crossword" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               CROSSWORD
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
             
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Wordsearch})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/WordSearch" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/WordSearch" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               WORDSEARCH
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -50,7 +50,7 @@ const Home = () => {
 
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Whackamole})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/whackamole" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/whackamole" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               WHACK-A-MOLE
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -60,7 +60,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Hangman})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/hangman" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/hangman" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               HANGMAN
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -70,7 +70,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${MemoryGame})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/memorygame" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/memorygame" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               MEMORY GAME
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -80,7 +80,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${TicTacToe})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/tictactoe" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               TIC TAC TOE
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -90,7 +90,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Puzzle})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/puzzle" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/puzzle" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               PUZZLE GAME
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Trivia})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/TriviaQuiz" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/TriviaQuiz" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               TRIVIA APP
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -110,7 +110,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Snake})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/tictactoe" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/tictactoe" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               SNAKE GAME
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
@@ -120,7 +120,7 @@ const Home = () => {
           </div>
 
           <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'column', margin: '5px', padding: '10px', justifyContent: 'center', alignItems: 'center', backgroundImage: `url(${Flappy})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', borderRadius: '15px', border: '1px solid grey'}}>
-            <Link to="/flappy" target='_blank' className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
+            <Link to="/flappy" className='start-btn' style={{textDecoration: 'none', zIndex: '3'}}>
               FLAPPY BIRD
             </Link>
             <div style={{height: '100px', width: '160px', display: 'flex', flexDirection: 'row', margin: '5px', padding: '10px', zIndex: '1', position: 'absolute', justifyContent: 'flex-end', alignItems: 'flex-end', borderRadius: '15px', opacity: '0.4'}}>
