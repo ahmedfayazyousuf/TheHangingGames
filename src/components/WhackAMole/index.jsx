@@ -57,21 +57,20 @@ const WhackAMoleGame = () => {
         <h1 className='h1whack'>Whack-a-mole! </h1>
         <h1 className="score" >Score: {score} </h1>
 
-        <div className="controls">
+        {/* <div className="controls">
           <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', zIndex: '100000000000'}}>Start!</button>
-        </div>
+        </div> */}
         
-        <div className="game" style={{marginTop: '100px'}}>
+        <div className="game">
           {Array.from({ length: 6 }, (_, index) => (
             <div key={index} className={`hole hole${index + 1}`}>
               <div className="mole" onClick={bonk}></div>
             </div>
           ))}
         </div>
-
-        
-
       </div>
+      
+      <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', zIndex: '100000000000'}}>Start!</button>
     </div>
   );
 };
