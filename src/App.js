@@ -29,13 +29,10 @@ function App() {
           <Route exact path="/TicTacToe" element={<TicTacToe />} />
           <Route exact path="/TriviaQuiz" element={<TriviaQuiz />} />
           <Route exact path="/TriviaQuizScore" element={<TriviaQuizScore />} />
-          
           <Route exact path="/FightingGame" element={<FightingGame />} />
           <Route exact path="/score" element={<TriviaQuizScore />} />
           <Route exact path="/Flappy" element={<FlappyBird />} />
           <Route exact path="/Puzzle" element={<Puzzle />} />
-
-
         </Routes>
       </Router>
     </>
