@@ -66,7 +66,7 @@ const WhackAMoleGame = () => {
         </div>
 
         <div className="controls">
-          <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', marginTop:'70px'}}>Start!</button>
+          <button onClick={startGame} style={{width: '100px', height: '30px', backgroundColor: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', zIndex: '10000'}}>Start!</button>
         </div>
 
       </div>
