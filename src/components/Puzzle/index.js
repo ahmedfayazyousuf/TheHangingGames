@@ -712,12 +712,13 @@ export default function Puzzle(){
             lineOffset: 30,
             lineStep: 30,
             lines: [
-              {text: "load image", func: this.loadImage()},
-              {text: "12 piece", func: this.returnFunct(12)},
-              {text: "25 piece", func: this.returnFunct(25)},
-              {text: "50 piece", func: this.returnFunct(50)},
-              {text: "100 piece", func: this.returnFunct(100)},
-              {text: "200 piece", func: this.returnFunct(200)}
+              {text: "Load Image", func: this.loadImage()},
+              {text: "12 pieces", func: this.returnFunct(12)},
+              {text: "25 pieces", func: this.returnFunct(25)},
+              {text: "50 pieces", func: this.returnFunct(50)},
+              {text: "100 pieces", func: this.returnFunct(100)},
+              {text: "200 pieces", func: this.returnFunct(200)}
+              // {text: "1000 pieces", func: this.returnFunct(1000)}
             ]
           });
         }
