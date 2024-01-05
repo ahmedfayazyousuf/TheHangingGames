@@ -112,8 +112,8 @@ body{
 }
 
 input {
-  width: 4.54545454545vw;
-  height: 4.54545454545vw;
+  width: 34.0909090909px;
+  height: 34.0909090909px;
   font-size: 14px;
   text-align: center;
   border: 1px solid #000;
@@ -125,8 +125,8 @@ input {
 }
 
 .static-word {
-  width: 4.54545454545vw;
-  height: 4.54545454545vw;
+  width: 34.0909090909px;
+  height: 34.0909090909px;
   font-size: 14px;
   text-align: center;
   box-sizing: border-box;
@@ -161,19 +161,78 @@ input.static {
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
+  border-radius: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #686868;
+  background: grey;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: darkgrey;
+  background: black;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #00F526;
+  transform: 3s;
+  transition: 3s;
+  border-radius: 10px;
 }
+
+
+
+.HomeMainDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+
+.CrosswordsWords{
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 1067px) {
+  .HomeMainDiv{
+    width: 100vw;
+  }
+}
+
+
+
+@media only screen and (max-width: 763px) {
+  input {
+    width: 4.54545454545vw;
+    height: 4.54545454545vw;
+  }
+  
+  .static-word {
+    width: 4.54545454545vw;
+    height: 4.54545454545vw;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .CrosswordsWords{
+    width: 100vw;
+  }
+}
+
+
+
+

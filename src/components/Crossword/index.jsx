@@ -371,8 +371,11 @@ const opportunityConditions = [
       <div className="crossword">{renderGrid()}</div>
       
       <button style={{height: '50px', width: '120px', fontSize: '16px', background: 'black', color: '#00f526', border: '1px solid #00f526', marginTop: '30px'}} onClick={handleSubmit}>SUBMIT</button>
+
+
+
       
-      <div style={{width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '35px'}}>
+      <div className='CrosswordsWords'>
 
         <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', padding: '10px', flexDirection: 'column'}}>
           <p id='successText'>1. SUCCESS</p>
