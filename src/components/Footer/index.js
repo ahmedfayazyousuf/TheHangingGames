@@ -9,7 +9,7 @@ function App() {
         <Link to="/">
             <button style={{height: '30px', width: '70px', fontSize: '16px', background: 'black', color: '#00f526', border: '1px solid #00f526', cursor: 'grab', marginRight: '15px'}}>Return</button>
         </Link>
-        <h4 style={{color: '#00f526'}}>The Hanging House</h4>
+        <p style={{color: 'white'}}>The <span style={{color:'#00f526'}}> Hanging </span>House</p>
     </div>
   );
 }
