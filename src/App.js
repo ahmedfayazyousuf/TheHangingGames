@@ -16,7 +16,7 @@ import FightingGame from './components/FightingGame';
 import FlappyBird from './components/FlappyBird/index.js';
 import Puzzle from './components/Puzzle/index.js';
 import Match3 from './components/Match3/index.js';
-
+import Slot from './components/Slot/index.js';
 function App() {
   return (
     <>
@@ -37,6 +37,9 @@ function App() {
             <Route exact path="/Flappy" element={<FlappyBird />} />
             <Route exact path="/Puzzle" element={<Puzzle />} />
             <Route exact path="/Match3" element={<Match3 />} />
+
+            <Route exact path="/Slot" element={<Slot />} />
+
           </Routes>
       </Router>
     </>
